@@ -85,5 +85,20 @@
     </div>
       <script>window.addEventListener("load", function() {const form = document.getElementById('my-form');form.addEventListener("submit", function(e) {e.preventDefault();const data = new FormData(form);const action = e.target.action;fetch(action, {method: 'POST',body: data,}).then(() => {alert("Success! We will be in touch soon :)");})});});</script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script>
+  window.addEventListener('load', function() {
+   document.addEventListener('click', function(e) {
+      if (e.target.closest('[href*="//wa.link/"]')) {
+         gtag('event', 'conversion', {'send_to': 'AW-11022043762/unBvCNbl74QYEPKU3Icp'});
+      }
+    })
+     document.addEventListener('click', function(e) {
+      if (e.target.closest('.btn-outline-light') && e.target.closest('.btn-outline-light').innerText.includes('Submit')) {
+          gtag('event', 'conversion', {'send_to': 'AW-11022043762/VPcSCNPl74QYEPKU3Icp'});
+      }
+    })
+  })
+  gtag('event', 'conversion', {'send_to': 'AW-11022043762/E7G7CNDl74QYEPKU3Icp'});
+</script>  
   </body>
 </html>
